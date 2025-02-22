@@ -17,20 +17,31 @@ This repository exists **only** to automate the process of installing Codeium Wi
 
 ![Windsurf AI Desktop Screenshot](windsurf-ai-dekstop-screenshot.png)
 
+This PKGBUILD was inspired by:
+- [`vscodium` PKGBUILD](https://aur.archlinux.org/packages/vscodium-bin) for handling **prebuilt binaries** efficiently.
+- [`windsurf` PKGBUILD](https://github.com/watzon/aur-packages/blob/main/packages/windsurf/PKGBUILD) by **Chris Watson** `<cawatson1993@gmail.com>`, used as a reference.
+
+### 🛠 Key Improvements in This PKGBUILD:
+✅ **Correct meta-information** (AppStream, MIME types, and desktop entry)  
+✅ **Proper URL handling** (desktop file integration)  
+✅ **Bash & Zsh completions** for better shell support  
+✅ **Improved icon resolution** for better desktop integration  
+
+---
 
 ## 🏗️ Installation (AUR)
 
 Once this package is submitted and accepted into the AUR, you can install it using an AUR helper like `yay`:
 
 ```bash
-yay -S windsurf-ai-bin
+yay -S windsurf-bin
 ```
 
 Alternatively, you can clone the AUR repository and build it manually:
 
 ```bash
-git clone https://aur.archlinux.org/windsurf-ai-bin.git
-cd windsurf-ai-bin
+git clone https://aur.archlinux.org/windsurf-bin.git
+cd windsurf-bin
 makepkg -si
 ```
 

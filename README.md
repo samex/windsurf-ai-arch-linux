@@ -40,8 +40,6 @@ Since this package pulls prebuilt binaries, updates depend on new tarball releas
 
 ## 📜 License
 
-The Codeium Windsurf AI Editor is distributed under the **Apache 2.0 (Chromium-based) License** as per the official Codeium distribution.
-
 This PKGBUILD script itself is under the **MIT License**.
 
 ## 🤝 Contributions

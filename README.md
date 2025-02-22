@@ -23,14 +23,14 @@ This repository exists **only** to automate the process of installing Codeium Wi
 Once this package is submitted and accepted into the AUR, you can install it using an AUR helper like `yay`:
 
 ```bash
-yay -S codeium-windsurf-bin
+yay -S windsurf-ai-bin
 ```
 
 Alternatively, you can clone the AUR repository and build it manually:
 
 ```bash
-git clone https://aur.archlinux.org/codeium-windsurf-bin.git
-cd codeium-windsurf-bin
+git clone https://aur.archlinux.org/windsurf-ai-bin.git
+cd windsurf-ai-bin
 makepkg -si
 ```
 

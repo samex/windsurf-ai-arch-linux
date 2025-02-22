@@ -1,5 +1,8 @@
 # Codeium Windsurf AI Editor - AUR Package
 
+![Windsurf AI Logo](windsurf-ai.png)
+
+
 ## ⚠️ Disclaimer
 
 This repository **does not** maintain or develop the Codeium Windsurf AI Editor. It simply provides an AUR package to facilitate installation for Arch Linux users. The package consists of **precompiled binaries** sourced from the official Codeium website.
@@ -11,6 +14,9 @@ For issues related to the editor itself, visit the official [Codeium](https://co
 [Codeium Windsurf AI Editor](https://codeium.com/) is a standalone code editor based on VS Code, designed to work seamlessly with Codeium's AI-powered coding assistance. However, its official distribution only provides a **tarball download** without proper integration into package managers like `pacman`.
 
 This repository exists **only** to automate the process of installing Codeium Windsurf AI Editor via the AUR.
+
+![Windsurf AI Desktop Screenshot](windsurf-ai-dekstop-screenshot.png)
+
 
 ## 🏗️ Installation (AUR)
 

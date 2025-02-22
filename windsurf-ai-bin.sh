@@ -12,5 +12,5 @@ if [[ -f $XDG_CONFIG_HOME/windsurf-ai-flags.conf ]]; then
     done
 fi
 
-# Launch
-exec /opt/Windsurf-AI/windsurf "$@" "${WINDSURF_USER_FLAGS[@]}"
+# Launch Windsurf-AI
+exec /opt/Windsurf-AI/Windsurf/windsurf "$@" "${WINDSURF_USER_FLAGS[@]}"

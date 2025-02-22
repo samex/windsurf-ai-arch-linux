@@ -14,18 +14,22 @@ optdepends=('glib2: Needed for move to trash functionality'
 provides=('windsurf-ai')
 conflicts=('windsurf-ai')
 source=("windsurf-ai.desktop::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai.desktop"
+        "windsurf-ai.png::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai.png"
         "windsurf-ai-url-handler.desktop::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai-url-handler.desktop"
         "windsurf-ai-bin.sh::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai-bin.sh"
-        "Windsurf-linux-x64-${pkgver}.tar.gz::Windsurf-linux-x64-${pkgver}.tar.gz::https://github.com/samex/windsurf-ai-arch-linux/releases/download/${pkgver}/Windsurf-linux-x64-${pkgver}.tar.gz")
-sha256sums=('8e33fc5dce1a865ba920c4093eaabd88b97c80f6f20edcf4788c30ce7b499512'
+        "Windsurf-linux-x64-${pkgver}.tar.gz::https://github.com/samex/windsurf-ai-arch-linux/releases/download/${pkgver}/Windsurf-linux-x64-${pkgver}.tar.gz")
+sha256sums=('9c40c193e020ce8041ef2ef9756fcbd431e376bb6fc6300a96bed703b1496ca2'
+            '5c54ecf084dbaee5d85036205c2bb2df0d9b2bf77a503d722ee9833e4a236d7a'
             '043f74feb5946ca5b98dbc1bf8af0d5377a3e1308b77c426de8ad5645331915e'
-            '93f57c2a6ccd01e35420d29a50dbb26ff1c03bb6982d0daa15ba000b2514f026'
+            '041458f6ef3ccdc8b653cf93eb06d1b7930b5a37b27de3c57bf60ae44af81b0f'
             '6dcf686038c6587410b25dd041a748a59593164b6c3ffb31935abef1325bfa8c')
 
 prepare() {
     mkdir -p "${srcdir}/windsurf-latest"
     tar -xzf "Windsurf-linux-x64-${pkgver}.tar.gz" -C "${srcdir}/windsurf-latest"
 }
+
+options=('!strip')
 
 package() {
     install -d "${pkgdir}/opt/${_pkgname}"
@@ -39,5 +43,5 @@ package() {
     install -m644 "${srcdir}/windsurf-ai-url-handler.desktop" "${pkgdir}/usr/share/applications/windsurf-ai-url-handler.desktop"
 
     install -d "${pkgdir}/usr/share/icons/hicolor/128x128/apps" 
-    install -m644 "${srcdir}/windsurf-latest/resources/app/resources/linux/code.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/windsurf-ai.png"
+    install -m644 "${srcdir}/windsurf-ai.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/windsurf-ai.png"
 }

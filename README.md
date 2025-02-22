@@ -1,6 +1,6 @@
 # Codeium Windsurf AI Editor - AUR Package
 
-![Windsurf AI Logo](windsurf-ai.png)
+![Windsurf AI Logo](windsurf.png)
 
 
 ## ⚠️ Disclaimer
@@ -15,7 +15,7 @@ For issues related to the editor itself, visit the official [Codeium](https://co
 
 This repository exists **only** to automate the process of installing Codeium Windsurf AI Editor via the AUR.
 
-![Windsurf AI Desktop Screenshot](windsurf-ai-dekstop-screenshot.png)
+![Windsurf AI Desktop Screenshot](windsurf-dekstop-screenshot.png)
 
 This PKGBUILD was inspired by:
 - [`vscodium` PKGBUILD](https://aur.archlinux.org/packages/vscodium-bin) for handling **prebuilt binaries** efficiently.

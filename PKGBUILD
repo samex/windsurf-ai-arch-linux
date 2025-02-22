@@ -14,7 +14,7 @@ optdepends=('glib2: Needed for move to trash functionality'
 provides=('windsurf-ai')
 conflicts=('windsurf-ai')
 source=("windsurf-ai.desktop::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai.desktop"
-        "windsurf-url-handler.desktop::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-url-handler.desktop"
+        "windsurf-ai-url-handler.desktop::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai-url-handler.desktop"
         "windsurf-ai-bin.sh::https://raw.githubusercontent.com/samex/windsurf-ai-arch-linux/main/windsurf-ai-bin.sh"
         "Windsurf-linux-x64-${pkgver}.tar.gz::Windsurf-linux-x64-${pkgver}.tar.gz::https://github.com/samex/windsurf-ai-arch-linux/releases/download/${pkgver}/Windsurf-linux-x64-${pkgver}.tar.gz")
 sha256sums=('8e33fc5dce1a865ba920c4093eaabd88b97c80f6f20edcf4788c30ce7b499512'
@@ -36,7 +36,7 @@ package() {
 
     install -d "${pkgdir}/usr/share/applications"
     install -m644 "${srcdir}/windsurf-ai.desktop" "${pkgdir}/usr/share/applications/windsurf-ai.desktop"
-    install -m644 "${srcdir}/windsurf-url-handler.desktop" "${pkgdir}/usr/share/applications/windsurf-url-handler.desktop"
+    install -m644 "${srcdir}/windsurf-ai-url-handler.desktop" "${pkgdir}/usr/share/applications/windsurf-ai-url-handler.desktop"
 
     install -d "${pkgdir}/usr/share/icons/hicolor/128x128/apps" 
     install -m644 "${srcdir}/windsurf-latest/resources/app/resources/linux/code.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/windsurf-ai.png"

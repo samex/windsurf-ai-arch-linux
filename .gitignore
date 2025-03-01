@@ -2,3 +2,5 @@ windsurf-latest
 *tar*
 pkg
 src
+*deb*
+automation.dev.sh
